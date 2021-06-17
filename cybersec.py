@@ -110,7 +110,7 @@ def Mail(receiver_email,OTP):
     msg = EmailMessage()
     msg.set_content('YOUR OTP FOR ACCESSING THE FILE IS {}'.format(OTP))
     msg['Subject'] = 'OTP'
-    msg['From'] = 'soham2112@gmail.com'
+    msg['From'] = 'YOUR EMAIL'
     msg['To'] = receiver_email
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:

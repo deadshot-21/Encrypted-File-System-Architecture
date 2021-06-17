@@ -105,8 +105,8 @@ def Mail(receiver_email,OTP):
     from email.message import EmailMessage
     port = 465  
     smtp_server = "smtp.gmail.com"
-    sender_email = "soham2112@gmail.com"
-    password = 'sohamfaldu2001'
+    sender_email = "YOUR EMAIL"
+    password = 'YOUR PASSWORD'
     msg = EmailMessage()
     msg.set_content('YOUR OTP FOR ACCESSING THE FILE IS {}'.format(OTP))
     msg['Subject'] = 'OTP'
